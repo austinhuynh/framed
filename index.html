@@ -5,31 +5,28 @@
 <h1>My First Web Page</h1>
 <p>My first paragraph.</p>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
 <script>
-if (annyang) {
-  // Let's define a command.
-  const commands = {
-    'hello': () => { alert('Hello world!'); }
-  };
+    if (annyang) {
+      // Let's define a command.
+      const commands = {
+        'hello': () => { alert('Hello world!'); }
+      };
+    
+      // Add our commands to annyang
+      annyang.addCommands(commands);
 
-  // Add our commands to annyang
-  annyang.addCommands(commands);
-
-});
-
-  // Start listening.
-  annyang.start();
-
-  annyang.addCallback('result', function(phrases) {
-  document.write("I think the user said: ", phrases[0]);
-  document.write("But then again, it could be any of the following: ", phrases);
-});
-}
+      annyang.addCallback('result', function(phrases) {
+        console.log("I think the user said: ", phrases[0]);
+        console.log("But then again, it could be any of the following: ", phrases);
+        });
+    
+      // Start listening.
+      annyang.start();
+    }
 </script>
 
 <script>
-
+document.write(5 + 6);
 </script>
 
 </body>
