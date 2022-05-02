@@ -8,6 +8,7 @@
 		format('opentype');
 }
 
-div {
+speech {
     font-family: 'penStandard', sans-serif;
+    font-size: large;
 }
