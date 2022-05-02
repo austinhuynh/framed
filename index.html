@@ -13,12 +13,25 @@
     />
 
     <script>
+      function randomColor(brightness){
+        function randomChannel(brightness){
+          var r = 255-brightness;
+          var n = 0|((Math.random() * r) + brightness);
+          var s = n.toString(16);
+          return (s.length==1) ? '0'+s : s;
+        }
+        return '#' + randomChannel(brightness) + randomChannel(brightness) + randomChannel(brightness);
+      }
+    </script>
+
+    <script>
       function placeWord(word) {
         var fullWidth = window.innerWidth;
         var fullHeight = window.innerHeight;
 
         var elem = document.createElement("div");
         elem.textContent = word;
+        elem.style.color = randomColor(100);
         elem.className = "animate__animated animate__fadeIn speech";
         elem.style.position = "absolute";
         elem.style.left = Math.round(Math.random() * fullWidth) + "px";
