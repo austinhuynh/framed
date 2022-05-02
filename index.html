@@ -12,19 +12,20 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <!-- <script>
+    <script>
       function placeWord(word) {
         var fullWidth = window.innerWidth;
         var fullHeight = window.innerHeight;
 
         var elem = document.createElement("div");
         elem.textContent = word;
+        elem.className = "animate__animated animate__fadeIn";
         elem.style.position = "absolute";
         elem.style.left = Math.round(Math.random() * fullWidth) + "px";
         elem.style.top = Math.round(Math.random() * fullHeight) + "px";
         document.body.appendChild(elem);
       }
-    </script> -->
+    </script>
     
 </head>
     
@@ -50,7 +51,6 @@
     }
 </script>
 
-<h1 class="animate__animated animate__fadeIn">An animated element</h1>
 
 </body>
 </html>
