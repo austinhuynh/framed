@@ -20,7 +20,8 @@
         var elem = document.createElement("div");
         elem.textContent = word;
         elem.className = "animate__animated animate__fadeIn";
-        elem.style = "speech";
+        elem.style.fontFamily = 'penStandard', sans-serif;
+        elem.style.fontSize = "4vw";
         elem.style.position = "absolute";
         elem.style.left = Math.round(Math.random() * fullWidth) + "px";
         elem.style.top = Math.round(Math.random() * fullHeight) + "px";
@@ -30,7 +31,7 @@
     
 </head>
     
-<body>
+<body style="background-color:#121212">
 
 <script>
 
