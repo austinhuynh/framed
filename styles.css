@@ -1,3 +1,18 @@
+* {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-height: 100%;
+    background: black;
+    float: left;
+    width: 100%;
+}
+
 @font-face {
     font-family: 'penStandard';
 	src: url('PenStandard-Angry.otf'); 
@@ -9,7 +24,6 @@
 }
 
 .speech {
-	color:#FFFFFF;
     font-family: 'penStandard', sans-serif;
     font-size: 50px;
     font-size: 4vw;
