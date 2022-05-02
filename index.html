@@ -3,6 +3,7 @@
     
 <head>
     <link rel="stylesheet" href="styles.css">
+
 </head>
     
 <body>
@@ -21,8 +22,18 @@
         console.log("I think the user said: ", phrases[0]);
         console.log("But then again, it could be any of the following: ", phrases);
 
-        document.write("I think the user said: ", phrases[0]);
-        });
+
+        var fullWidth = window.innerWidth;
+        var fullHeight = window.innerHeight;
+
+        
+        var elem = document.createElement("div");
+        elem.textContent = phrases[0];
+        elem.style.position = "absolute";
+        elem.style.left = Math.round(Math.random() * fullWidth) + "px";
+        elem.style.top = Math.round(Math.random() * fullHeight) + "px";
+        document.body.appendChild(elem);
+
     
       // Start listening.
       annyang.start();
