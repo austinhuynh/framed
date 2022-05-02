@@ -1,1 +1,13 @@
+@font-face {
+    font-family: 'penStandard';
+	src: url('PenStandard-Angry.otf'); 
+	src: 
+		local('PenStandard-Angry'),
+		local('PenStandard Angry'),
+		url('PenStandard-Angry.otf') 
+		format('opentype');
+}
 
+div {
+    font-family: 'penStandard', sans-serif;
+}
